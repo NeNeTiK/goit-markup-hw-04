@@ -34,6 +34,10 @@ ul {
     list-style-type: none;
 }
 
+.page_container {
+    max-width: 1600px;
+}
+
 .logo {
     font-family: var(--raleway);
     font-size: 26px;
@@ -72,10 +76,22 @@ ul {
 .header-contacts {
     margin-left: 344px;
     align-items: center;
+    display: flex;
 }
 
 .header-contacts a {
     color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    fill: var(--dark-gray);
+    margin: 0 10px 2px 0;
+}
+
+.header-contacts:first-child a svg {
+    padding: 2px 0;
 }
 
 header a:hover,
@@ -83,17 +99,25 @@ header a:focus {
     color: var(--sky-blue);
 }
 
+header a:hover svg,
+header a:focus svg {
+    fill: var(--sky-blue);
+}
+
+
 .header-bar {
     display: flex;
     height: 80px;
 }
 
 .hero {
-    background-color: var(--very-dark);
+    background-image: url(../images/hero.png);
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-blend-mode: darken;
 }
 
 .hero-title {
@@ -136,6 +160,7 @@ header a:focus {
     font-weight: 700;
     line-height: 1.1721;
     letter-spacing: 0.42px;
+    margin-bottom: 10px;
 }
 
 .benefits ul p {
@@ -144,6 +169,16 @@ header a:focus {
     letter-spacing: 0.42px;
     color: var(--dark-gray);
     width: 270px;
+}
+
+.benefits-svg-container {
+    width: 270px;
+    height: 120px;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -159,8 +194,8 @@ header a:focus {
 }
 
 .about-us-img {
-    margin-left: 215px;
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -218,6 +253,39 @@ header a:focus {
     font-weight: 400;
 }
 
+.clients {
+    background-color: var(--white);
+}
+
+.clients h2 {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.clients ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+
+.clients svg {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients a:hover svg,
+.clients a:focus svg {
+    fill: var(--sky-blue);
+    border-color: var(--sky-blue);
+}
+
 footer {
     background: var(--very-dark);
 }
@@ -255,6 +323,26 @@ footer .logo {
 
 .address a {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.footer-links h2 {
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.footer-icons {
+    fill:var(--white);
 }
 
 
